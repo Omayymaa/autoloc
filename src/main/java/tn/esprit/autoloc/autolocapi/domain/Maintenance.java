@@ -28,4 +28,10 @@ public class Maintenance {
 
     @Column(length = 255)
     private String description;
+
+    // Atelier 2 : Associations
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "id_vehicule", nullable = false)
+    private Vehicule vehicule;
 }
