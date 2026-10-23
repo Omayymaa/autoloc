@@ -31,7 +31,7 @@ public class Employe {
     // Atelier 2 : Associations
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_agence", nullable = false)
+    @JoinColumn(name = "id_agence")
     private Agence agence;
 }
 

@@ -9,7 +9,7 @@ import tn.esprit.autoloc.autolocapi.service.IAgenceService;
 
 import java.util.List;
 
-@Tag(name = "Gestion des agences",description = "Crud")
+@Tag(name = "Gestion d' agences",description = "Crud")
 @RestController
 @AllArgsConstructor
 @RequestMapping("/agences")

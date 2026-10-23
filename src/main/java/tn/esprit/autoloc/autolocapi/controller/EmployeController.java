@@ -9,7 +9,7 @@ import tn.esprit.autoloc.autolocapi.service.IEmployeService;
 
 import java.util.List;
 
-@Tag(name = "Gestion de employées",description = "Crud")
+@Tag(name = "Gestion d'employées",description = "Crud")
 @RestController
 @AllArgsConstructor
 @RequestMapping("/employes")

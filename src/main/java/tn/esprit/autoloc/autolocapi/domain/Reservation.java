@@ -33,11 +33,11 @@ public class Reservation {
     // Atelier 2 : Associations
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_client", nullable = false)
+    @JoinColumn(name = "id_client")
     private Client client;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_vehicule", nullable = false)
+    @JoinColumn(name = "id_vehicule")
     private Vehicule vehicule;
 
     @OneToOne(mappedBy = "reservation")

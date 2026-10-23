@@ -32,6 +32,6 @@ public class Maintenance {
     // Atelier 2 : Associations
 
     @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "id_vehicule", nullable = false)
+    @JoinColumn(name = "id_vehicule")
     private Vehicule vehicule;
 }

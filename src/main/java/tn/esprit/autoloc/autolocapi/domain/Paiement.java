@@ -34,6 +34,6 @@ public class Paiement {
     // Atelier 2 : Associations
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_contrat", nullable = false)
+    @JoinColumn(name = "id_contrat")
     private Contrat contrat;
 }

@@ -35,7 +35,7 @@ public class Contrat {
     // Atelier 2 : Associations
 
     @OneToOne
-    @JoinColumn(name = "id_reservation", nullable = false, unique = true)
+    @JoinColumn(name = "id_reservation", unique = true)
     private Reservation reservation;
 
     @OneToMany(mappedBy = "contrat", cascade = CascadeType.ALL)
