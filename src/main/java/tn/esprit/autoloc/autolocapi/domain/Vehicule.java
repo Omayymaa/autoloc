@@ -45,7 +45,7 @@ public class Vehicule {
     //  Atelier 2 : Associations
 
     @ManyToOne
-    @JoinColumn(name = "id_agence", nullable = false)
+    @JoinColumn(name = "id_agence")
     private Agence agence;
 
     @ManyToMany(fetch = FetchType.LAZY)
