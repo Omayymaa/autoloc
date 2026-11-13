@@ -9,7 +9,7 @@ import tn.esprit.autoloc.autolocapi.service.IAgenceService;
 
 import java.util.List;
 
-@Tag(name = "Gestion d' agences",description = "Crud")
+@Tag(name = "Gestion d'agences",description = "Crud")
 @RestController
 @AllArgsConstructor
 @RequestMapping("/agences")
@@ -44,5 +44,12 @@ public class AgenceController {
     @DeleteMapping("/supprimerAgence/{idAgence}")
     public void supprimerAgence(@PathVariable  Long idAgence) {
         agenceService.supprimerAgence(idAgence);
+    }
+
+
+    @Operation(summary = "ajouter une agence avec ses véhicules")
+    @PostMapping("/ajouterAgenceEtAffecterVehicules")
+    public Agence ajouterAgenceEtAffecterVehicules(@RequestBody Agence agence) {
+        return agenceService.ajouterAgenceEtAffecterVehicules(agence);
     }
 }
